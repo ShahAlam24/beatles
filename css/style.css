@@ -1,0 +1,735 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, ol{
+    list-style-type: none;
+
+}
+img{
+    vertical-align: middle;
+}
+.clr{
+    clear: both;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+}
+
+@font-face{
+    src:url(../myriad-pro/MYRIADPRO-REGULAR.OTF);
+    font-family: 'myraid-regular';
+}
+@font-face{
+    src:url(../myriad-pro/MyriadPro-Light.otf);
+    font-family: 'myraid-light';
+}
+@font-face{
+    src:url(../myriad-pro/MYRIADPRO-BOLD.OTF);
+    font-family: 'myraid-bold';
+}
+@font-face{
+    src:url(../myriad-pro/MYRIADPRO-SEMIBOLD.OTF);
+    font-family: 'myraid-semi';
+}
+
+/* =======================================
+           Common css end
+=========================================*/
+/* =======================================
+           Header css start
+=========================================*/
+#header-part{
+    height: 32px;
+    background: #0872b9;
+}
+.header-text{
+    width: 50%;
+    float: left;
+}
+.header-text p{
+    color: #e7e7e7;
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+.social-icon{
+    width: 50%;
+    float: left;
+    text-align: right;
+    
+}
+.social-icon a{
+    color: #e7e7e7;
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: 24px;
+    transition: all linear .3s;
+
+}
+.social-icon a:hover{
+    color: #353535;
+}
+
+/* =======================================
+           Header css end
+=========================================*/
+
+
+
+/* =======================================
+           Menu css start
+=========================================*/
+
+    #menu-part{
+        height: 80px;
+        background: #ffffff;
+    }
+    .logo{
+        width: 20%;
+        float: left;
+    }
+    .logo a{
+        margin-top: 20px;
+    }
+    .main-menu{
+        width: 80%;
+        float: left;
+    }
+    .main-menu ul{
+        float: right;
+    }
+    .main-menu ul li{
+        float: left;
+    }
+    .main-menu ul li a{
+        line-height: 80px;
+        margin-left: 15px;   
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'myraid-regular';
+        color: #353535;
+        transition: all linear .3s;
+        
+        
+    }
+    .main-menu ul li a:hover{
+        color: #0872b9;
+    }
+/* =======================================
+           Menu css end
+=========================================*/
+
+
+
+/* =======================================
+           Banner css end
+=========================================*/
+#banner-part{
+    background: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
+}
+#banner-part::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+
+}
+
+.banner-right-side{
+    width: 470px;
+    float: right;
+    text-align: right;
+
+}
+.banner-right-side h2{
+    font-size: 30px ;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+
+}
+.banner-right-side h1{
+    font-size: 40px ;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+.banner-right-side p{
+    font-size: 13px ;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner-right-side p span{
+    font-size: 13px ;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+} 
+.banner-right-side a{
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size:14px ;
+    font-weight:500 ;
+    margin-left: 15px;
+    margin-top: 25px;
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+.banner-right-side a:hover{
+    background: #0872b9;
+    border: 1px solid #0872b9;
+}
+
+/* =======================================
+           Banner css end
+=========================================*/
+
+
+/* =======================================
+           About css start
+=========================================*/
+#about-part{
+    padding: 60px 0;
+    text-align: center;
+
+}
+.section_head{
+    display: inline-block;
+    position: relative;
+}
+.section_head h2{
+    font-size: 24px;
+    color: #353535;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.section_head img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+.about-row{
+    padding-top: 36px;
+}
+.about-img{
+    width: 390px;
+    float: left;
+}
+
+.about-text p{
+    width: 570px;
+    float: left;
+    text-align: left;
+    color: #555555;
+    font-size: 13px;
+    padding-top: 40px;
+    padding-left: 20px;
+    font-family:'Open Sans', sans-serif;
+    line-height: 24px;
+}
+.about-img img{
+    width: 100%;
+    max-width: 100%;
+}
+.about-text p span{
+    display: block;
+    padding-top: 25px;
+}
+/* =======================================
+           About css end
+=========================================*/
+/* =======================================
+           Service css start
+=========================================*/
+#service_part{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.service_row{
+    padding-top: 68px;
+}
+.service_col {
+	width: 31.93%;
+	float: left;
+	padding: 50px 20px 20px 20px;
+	background: #f1f1f1;
+	position: relative;
+	margin-right: 20px;
+}
+.service_col:nth-child(3){
+    margin-right: 0px;
+}
+.service_col h2{
+    font-size: 16px;
+    color: #353535;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.service_col p{
+    font-size: 13px;
+    font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+    color: #555555;
+    line-height: 24px;
+
+}
+
+.service-icon {
+	width: 69px;
+	height: 69px;
+	background: #f1f1f1;
+	border-radius: 50%;
+	line-height: 69px;
+	border: 2px solid #ffffff;
+	position: absolute;
+	left: 50%;
+	top: -37px;
+	transform: translateX(-50%);
+}
+.service-icon::after {
+	position: absolute;
+	content: '';
+	left: -4px;
+	top: -4px;
+	width: 69px;
+	height: 69px;
+	border: 2px solid #f1f1f1;
+	border-radius: 50%;
+}
+.service-icon::before {
+	position: absolute;
+	content: '';
+	left: -7px;
+	top: -7px;
+	width: 71px;
+	height: 71px;
+	border: 4px solid #ffffff;
+	border-radius: 50%;
+}
+.service_col:hover .service-icon{
+    background: #5bc5f4;
+    
+    
+}
+.service_col:hover .service-icon::after{
+    border-color: #5bc5f4;
+    
+}
+.service_col:hover{
+    box-shadow: 0px 0px 24px 6px rgb(0, 0, 0, .2);
+}
+
+/* =======================================
+    Service css end
+=========================================*/
+/* =======================================
+    Portfolio css start
+=========================================*/
+
+#portfolio-part{
+    text-align: center;
+}
+.section-port{
+    margin-bottom: 30px;
+}
+.port-row{
+    margin-bottom: 60px;
+}
+.port-col{
+    width: 23.43%;
+    float: left;
+    margin-right: 20px;
+
+}
+.port-img{
+    position: relative;
+}
+.port-col img{
+    width: 100%;
+    max-width: 100%;
+
+
+}
+.port-mb{
+    margin-bottom: 20px;
+}
+.port-img .port-overlay{
+    position:absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.6);
+    transform:scale(0);
+}
+.port-img .port-overlay a{
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    background: #5bc5f4;
+    line-height: 40px;
+    border-radius: 50%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+}
+.port-img:hover .port-overlay{
+    transform: scale(1);
+    transition: all linear .3s;
+}
+.port-col:nth-child(4){
+    margin-right: 0px;
+}
+
+
+/* =======================================
+    Portfolio css end
+=========================================*/
+/* =======================================
+    Team css start
+=========================================*/
+#team-part{
+    text-align: center;
+}
+.section_head{
+    margin-bottom: 30px;
+}
+.team-row{
+    padding-bottom: 60px;
+}
+.team-col{
+    width: 23.40%;
+    margin-right: 20px;
+    float: left;
+    overflow: hidden;
+
+}
+.team-col:nth-child(4){
+    margin-right: 0px;
+}
+.team-col img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.team-col:hover h2{
+    color: #5bc5f4;
+}
+
+.team-img{
+    position: relative;
+    
+}
+.img-overlay{
+    
+    position: absolute;
+    right: -80px; 
+    transition: all linear .6s;
+    height: 100%;
+}
+
+.team-img:hover .img-overlay{
+    height: 100%;
+    width: 80px;
+    top: 0;
+    right: 0;
+    display: block;
+    background: rgb(0, 0, 0, .6);
+    float:right;
+}
+
+.s-icon{
+    width: 38px;
+    height: 38px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    position: absulate;
+}
+.s-icon:hover{
+    background: #5bc5f4;
+    border-color: #5bc5f4;
+}
+
+.s-icon a{
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+}
+.team-text h2{
+    font-size: 16px;
+    font-weight:500 ;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    transition: all linear .3s;
+}
+.team-text h4{
+    font-size: 14px;
+    font-weight:400 ;
+    font-family: 'Oswald', sans-serif;
+    color: #555555;
+}
+/* =======================================
+    Team css end
+=========================================*/
+/* =======================================
+    Testimonial css start
+=========================================*/
+#test-part{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+.test-col {
+	width: 48.96%;
+	margin-right: 20px;
+    float: left;
+    
+}
+
+.test-col:nth-child(2){
+    margin-right: 0;
+}
+ .test-img {
+    width: 80px;
+    height: 80px;  
+    margin: 0 auto;
+    margin-bottom: 35px;
+    
+}
+.test-img img{
+    width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+
+
+}
+.test-text{
+    background: #f1f1f1;
+    padding: 20px;
+    position: relative;
+    margin-top: 35px;transition: all linear .2s;
+}
+.test-col:hover .test-text{
+    box-shadow: 0px 0px 24px 6px rgb(0, 0, 0, .2);
+}
+.test-text::after{
+    position: absolute;
+    top: 0;
+    left:46%;
+    content: '';
+    background: #f1f1f1;
+    height: 40px;
+    width: 40px;
+    margin-top: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.test-col:hover .test-text::after{
+    background: #5bc5f4;
+    box-shadow: 0px 0px 24px 6px rgb(0, 0, 0, .2);
+}
+.test-text h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
+}
+.test-text h3{
+    font-size: 13px;
+    font-weight: 400;
+    color: #555555;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+.test-text i{
+    color:#5bc5f4;
+    margin: 5px 0;
+}
+.test-text p{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #555555;
+    line-height: 24px;
+    font-family: 'Oswald', sans-serif;
+ 
+}
+/* =======================================
+    Testimonial css end
+=========================================*/
+
+/* =======================================
+    Footer css start
+=========================================*/
+#footer-part{
+    background: #353535;
+    width: 100%;
+}
+.footer-col-1{
+    width: 25%;
+    float: left;
+    
+}
+.footer-logo{
+    width: 80px;
+    height: 40px;
+    float: left;
+}
+.footer-col-1 p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #f1f1f1;
+    line-height: 24px;
+    font-family:'Open Sans', sans-serif;
+    margin-top: 5px;
+}
+.footer-col-1 p span{
+    display: block;
+    margin-top: 20px;
+}
+.fotter-logo img{
+    margin: 20px 0;
+}
+.footer-col-2{
+    width: 25%;
+    float: left;
+}
+.footer-head h2{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    margin: 30px 0 35px 0;
+}
+
+.footer-col-2 ul li {
+	font-size: 13px;
+	line-height: 24px;
+	color: #f1f1f1;
+	font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+	padding-left: 45px;
+    position: relative;
+    margin-top: 5px;
+    
+    
+
+}
+.footer-col-2 ul li i{
+    left: 0;
+    top: 7px;
+    background: #5bc5f4;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+
+}
+.footer-col-2 ul li span{
+    display: block;
+}
+
+.footer-col-3{
+    width: 20%;
+    float: left;
+}
+.footer-col-3 ul{
+    width: 50%;
+    float: left;
+    margin-top: -10px;
+}
+.footer-col-3 ul li{
+    padding-left: 10px;
+}
+.footer-col-3 ul li a{
+ 
+    font-size: 13px;
+	line-height: 36px;
+	color: #f1f1f1;
+	font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+
+    
+}
+.footer-col-3 ul li a:hover{
+    color: #5bc5f4;
+}
+.footer-col-4{
+    width: 30%;
+    float: left;
+}
+
+.footer-col-4 ul li {
+	width: 33.33%;
+	float: left;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+.footer-col-4 ul li img{
+    width: 100%;
+    max-width: 100%;
+    
+}
+#footer-bottom{
+    background: #555555;
+    text-align: center;
+}
+.footer-bottom-text{
+    padding:17px;
+    font-size: 13px;
+    color: #f1f1f1;
+	font-weight: 400;
+    font-family:'Open Sans', sans-serif;
+}
+.footer-bottom-text a{
+    color: #5bc5f4;
+}
+/* =======================================
+    Footer css end
+=========================================*/
